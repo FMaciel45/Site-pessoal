@@ -15,7 +15,7 @@ export const Content = styled.div`
   "contact";
 
   h2 {
-    font-size: 36px;
+    font-size: 42px;
     text-align: center;
   }
 `
@@ -34,7 +34,7 @@ export const Profile = styled.div`
     align-items: center;
 
     h1 {
-      font-size: 62px;
+      font-size: 64px;
     }
 
     p {
@@ -81,10 +81,72 @@ export const Profile = styled.div`
 
 export const About = styled.div`
   margin-top: 96px;
+
+  padding: 0px 58px;
+
+  p {
+    font-size: 20px;
+    margin-top: 18px;
+  }
+
+  h3 {
+      font-size: 24px;
+      text-align: center;
+
+      margin: 24px 0px;
+    }
+
+  .courses-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    padding: 0 148px;
+
+    h4 {
+      font-size: 20px;
+    }
+
+    h5 {
+      font-size: 18px;
+
+      margin: 12px 0px;
+    }
+
+    ul li {
+      font-size: 18px;
+
+      padding: 0px 24px;
+
+      list-style: none;
+
+      span {
+        font-weight: bold;
+      }
+    }
+  }
+
+  .course-wrapper {
+    border: 3px solid red;
+    border-radius: 8px;
+
+    padding: 18px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    img {
+      width: 190px;
+      height: 190px;
+
+      border-radius: 5px;
+    }
+  }
 `
 
 export const Techs = styled.div`
-  margin-top: 96px;
+  margin-top: 48px;
 
   padding: 32px 58px 48px 58px;
 
@@ -124,9 +186,82 @@ export const Techs = styled.div`
 
 export const Projects = styled.div`
   margin-top: 48px;
+  padding: 0px 58px;
+
+  img {
+    width: 280px;
+    height: 280px;
+  }
+
+  .projects-wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 32px;
+
+    margin-top: 48px;
+  }
+
+  .project-wrapper {
+    padding: 24px;
+
+    border: 3px solid red;
+    border-radius: 5px;
+
+    h4 {
+      text-align: center;
+      font-size: 28px;
+
+      margin-bottom: 24px;
+    }
+
+    p {
+      font-size: 17px;
+
+      margin-top: 24px;
+      text-align: center;
+    }
+
+    .links-wrapper {
+      margin-top: 24px;
+
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      gap: 14px;
+
+      button {
+        background-color: green;
+
+        padding: 8px 12px;
+
+        border: none;
+        border-radius: 5px;
+      }
+    }
+  }
 `
 
 export const Contact = styled.div`
   margin-top: 48px;
-  margin-bottom: 960px;
+
+  p {
+    font-size: 24px;
+    text-align: center;
+
+    margin: 24px 0px;
+  }
+
+  .contacts-wrapper {
+    font-size: 48px;
+
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 48px;
+
+    justify-content: center;
+
+    margin-bottom: 120px;
+  }
 `
