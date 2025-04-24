@@ -15,6 +15,6 @@ export const Container = styled.div`
   justify-content: space-between;
 
   p {
-    font-size: 14px;
+    font-size: 16px;
   }
 `

@@ -14,9 +14,20 @@ export const Content = styled.div`
   "projects"
   "contact";
 
+  h1 {
+    font-size: 64px;
+  }
+
   h2 {
-    font-size: 42px;
+    font-size: 44px;
     text-align: center;
+  }
+
+  h3 {
+    font-size: 28px;
+    text-align: center;
+
+    margin: 36px 0px;
   }
 `
 
@@ -33,12 +44,8 @@ export const Profile = styled.div`
     flex-direction: column;
     align-items: center;
 
-    h1 {
-      font-size: 64px;
-    }
-
     p {
-      font-size: 20px;
+      font-size: 22px;
       margin-top: 18px;
     }
 
@@ -59,15 +66,15 @@ export const Profile = styled.div`
     align-items: center;
     gap: 20px;
 
-    button {
-      padding: 14px;
+    a {
+      padding: 14px 20px;
 
       background-color: ${({theme}) => theme.COLORS.BUTTON_BACKGROUND};
 
       border: none;
       border-radius: 5px;
 
-      font-size: 16px;
+      font-size: 20px;
     }
   }
 
@@ -82,65 +89,61 @@ export const Profile = styled.div`
 export const About = styled.div`
   margin-top: 96px;
 
-  padding: 0px 58px;
+  padding: 0px 64px;
 
   p {
     font-size: 20px;
-    margin-top: 18px;
+    
+    margin-top: 24px;
   }
-
-  h3 {
-      font-size: 24px;
-      text-align: center;
-
-      margin: 24px 0px;
-    }
 
   .courses-wrapper {
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 24px;
 
-    padding: 0 148px;
+    padding: 0 182px;
 
-    h4 {
-      font-size: 20px;
-    }
+    .course-wrapper {
+      border: 3px solid ${({theme}) => theme.COLORS.BORDER_COLOR};
+      border-radius: 8px;
 
-    h5 {
-      font-size: 18px;
+      padding: 20px;
 
-      margin: 12px 0px;
-    }
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
 
-    ul li {
-      font-size: 18px;
+      .content-wrapper {
+        h4 {
+          font-size: 22px;
+        }
 
-      padding: 0px 24px;
+        h5 {
+          font-size: 20px;
 
-      list-style: none;
+          margin: 12px 0px;
+        }
 
-      span {
-        font-weight: bold;
+        ul li {
+          font-size: 20px;
+
+          padding: 0px 24px;
+
+          list-style: none;
+
+          span {
+            font-weight: bold;
+          }
+        }
       }
-    }
-  }
 
-  .course-wrapper {
-    border: 3px solid red;
-    border-radius: 8px;
+      img {
+        width: 190px;
+        height: 190px;
 
-    padding: 18px;
-
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    img {
-      width: 190px;
-      height: 190px;
-
-      border-radius: 5px;
+        border-radius: 5px;
+      }
     }
   }
 `
@@ -181,6 +184,14 @@ export const Techs = styled.div`
     .sqliteIcon {
       color: ${({theme}) => theme.COLORS.SQLITE_ICON};
     }
+
+    .reactIcon, .nodeIcon, .jsIcon, .tsIcon, .sqliteIcon {
+      transition: transform 0.3s ease;
+    }
+
+    .reactIcon:hover, .nodeIcon:hover, .jsIcon:hover, .tsIcon:hover, .sqliteIcon:hover {
+      transform: scale(1.25);
+    }
   }
 `
 
@@ -191,11 +202,20 @@ export const Projects = styled.div`
   img {
     width: 280px;
     height: 280px;
+
+    border-radius: 5px;
+
+    transition: transform 0.4s ease;
+  }
+
+  img:hover {
+    transform: scale(1.15);
   }
 
   .projects-wrapper {
     display: flex;
     align-items: center;
+    justify-content: center;
     flex-direction: row;
     gap: 32px;
 
@@ -203,23 +223,32 @@ export const Projects = styled.div`
   }
 
   .project-wrapper {
-    padding: 24px;
+    padding: 32px;
 
-    border: 3px solid red;
+    max-width: 380px;
+    min-height: 785px;
+
+    border: 3px solid ${({theme}) => theme.COLORS.BORDER_COLOR};
     border-radius: 5px;
 
     h4 {
       text-align: center;
       font-size: 28px;
 
-      margin-bottom: 24px;
+      margin-bottom: 38px;
     }
 
     p {
-      font-size: 17px;
+      font-size: 18px;
 
-      margin-top: 24px;
+      margin-top: 38px;
       text-align: center;
+    }
+
+    .img-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
 
     .links-wrapper {
@@ -231,19 +260,23 @@ export const Projects = styled.div`
       gap: 14px;
 
       button {
-        background-color: green;
+        background-color: ${({theme}) => theme.COLORS.BUTTON_BACKGROUND};
 
         padding: 8px 12px;
 
         border: none;
         border-radius: 5px;
+
+        a {
+          font-size: 20px;
+        }
       }
     }
   }
 `
 
 export const Contact = styled.div`
-  margin-top: 48px;
+  margin-top: 72px;
 
   p {
     font-size: 24px;
@@ -253,8 +286,6 @@ export const Contact = styled.div`
   }
 
   .contacts-wrapper {
-    font-size: 48px;
-
     display: flex;
     align-items: center;
     flex-direction: row;
@@ -263,5 +294,11 @@ export const Contact = styled.div`
     justify-content: center;
 
     margin-bottom: 120px;
+
+    a {
+      font-size: 76px;
+
+      margin-top: 24px;
+    }
   }
 `

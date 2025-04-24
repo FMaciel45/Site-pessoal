@@ -1,14 +1,11 @@
 import { Container } from "./styles"
 
 export function Header() {
-
   return (
     <Container>
-
-      <a href="#">Sobre</a>
-      <a href="#">Projetos</a>
-      <a href="#">Contato</a>
-
+      <a href="#sobre">Sobre</a>
+      <a href="#projetos">Projetos</a>
+      <a href="#contato">Contato</a>
     </Container>
   )
 }

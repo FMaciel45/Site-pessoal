@@ -8,7 +8,7 @@ import IesbLogo from "../../assets/iesb_logo.jpeg";
 import ThomasLogo from "../../assets/ctj.jpg";
 import RocketLogo from "../../assets/rocket.jpg";
 import FoodEx from "../../assets/FoodEx.png";
-import RocketN from "../../assets/RocketN.png"
+import RocketN from "../../assets/RocketN.png";
 
 import { FaReact, FaNodeJs, FaLinkedin, FaGithub } from "react-icons/fa";
 import { SiJavascript, SiTypescript, SiSqlite, SiGmail } from "react-icons/si";
@@ -40,9 +40,9 @@ export function Home() {
 
             <div className="buttons-wrapper">
 
-              <button>Download CV</button>
+              <a href = "../../../public/CVFelipe.pdf" download>Download CV</a>
 
-              <button>Entrar em contato</button>
+              <a href = "mailto:fesoaresma@gmail.com" >Entrar em contato</a>
 
             </div>
 
@@ -50,7 +50,7 @@ export function Home() {
 
         </Profile>
 
-        <About>
+        <About id = "sobre">
 
           <div className="about-wrapper">
             <h2>Sobre Mim</h2>
@@ -116,7 +116,7 @@ export function Home() {
 
         </About>
 
-        <Techs>
+        <Techs id = "projetos">
 
           <div className="sectionTitle-wrapper">
             <h2>Tecnologias</h2>
@@ -146,42 +146,46 @@ export function Home() {
             <div className="project-wrapper">
               <h4>Food Explorer</h4>
 
-              <img src = {FoodEx} alt = "Imagem da tela home do site Food Explorer" />
+              <div className="img-wrapper">
+                <img src = {FoodEx} alt = "Imagem da tela home do site Food Explorer" />  
+              </div>
 
-              <p>Projeto pessoal de site para um restaurante fictício. Desenvolvido com NodeJS e ReactJS com Javascript. Além disso, foi utilizado o SGBD SQLite para armazenamento local de dados. Ainda em desenvolvimento.</p>
+              <p>Projeto de site para pedidos em um restaurante fictício. Desenvolvido com NodeJS e ReactJS com Javascript. Foi utilizado o SGBD SQLite para armazenamento local de dados. Projeto em desenvolvimento para implementação de novas features e melhorias.</p>
 
               <div className="links-wrapper">
-                <button><a href = "https://github.com/FelipeS45/Frontend-FoodExplorer" target = "_blank" >Deploy do Frontend</a></button>
+                <button><a href = "https://github.com/FelipeS45/Frontend-FoodExplorer" target = "_blank" >Repositório do Frontend</a></button>
 
-                <button><a href = "https://github.com/FelipeS45/API-Backend-FoodExplorer" target = "_blank" >Deploy do Backend</a></button>
+                <button><a href = "https://github.com/FelipeS45/API-Backend-FoodExplorer" target = "_blank" >Repositório do Backend</a></button>
               </div>
             </div>
 
             <div className="project-wrapper">
               <h4>Rocket Notes</h4>
 
-              <img src = {RocketN} alt="Tela home do site RocketNotes"/>
+              <div className="img-wrapper">
+                <img src = {RocketN} alt="Tela home do site RocketNotes"/>
+              </div>
 
               <p>Projeto pessoal de site para armazenamento de notas/lembretes pessoais. Desenvolvido com NodeJS e ReactJS com Javascript. Além disso, foi utilizado o SGBD SQLite para armazenamento local de dados na aplicação.</p>
 
               <div className="links-wrapper">
-                <button><a href = "https://github.com/FelipeS45/RocketNotes-frontend" target = "_blank" >Deploy do Frontend</a></button>
+                <button><a href = "https://github.com/FelipeS45/RocketNotes-frontend" target = "_blank" >Repositório do Frontend</a></button>
 
-                <button><a href = "https://github.com/FelipeS45/RocketNotes-API-backend" target = "_blank" >Deploy do Backend</a></button>
+                <button><a href = "https://github.com/FelipeS45/RocketNotes-API-backend" target = "_blank" >Repositório do Backend</a></button>
               </div>
             </div>
 
             <div className="project-wrapper">
               <h4>Site Pessoal</h4>
 
-              <img src = {RocketLogo} alt="Imagem da home do meu site pessoal" />
+              <div className="img-wrapper">
+                <img src = {RocketLogo} alt="Imagem da home do meu site pessoal"/>
+              </div>
 
-              <p>Projeto de site com portifólio pessoal e informações. Desenvolvido com React e Typescript. Foi utilizado o conceito de CSS-in-JS com a biblioteca Styled Components e a biblioteca React Icons.</p>
+              <p>Projeto de site com portifólio pessoal e informações de contato. Desenvolvido apenas com React e Typescript. Foi utilizado o conceito de CSS-in-JS com a biblioteca React Styled Components e a biblioteca React Icons.</p>
 
               <div className="links-wrapper">
-                <button><a href = "https://github.com/FelipeS45/RocketNotes-frontend" target = "_blank" >Deploy do Frontend</a></button>
-
-                <button><a href = "https://github.com/FelipeS45/RocketNotes-API-backend" target = "_blank" >Deploy do Backend</a></button>
+                <button><a href = "https://github.com/FelipeS45/RocketNotes-frontend" target = "_blank" >Repositório do Frontend</a></button>
               </div>
             </div>
 
@@ -189,18 +193,19 @@ export function Home() {
           
         </Projects>
 
-        <Contact>
+        <Contact id = "contato">
 
           <h2>Entre em contato comigo!</h2>
 
           <p>Estou animado para ser o próximo desenvolvedor do time da sua empresa!</p>
 
           <div className="contacts-wrapper">
-            <FaLinkedin/>
+            
+            <a href = "https://www.linkedin.com/in/f-maciel/" target = "_blank"><FaLinkedin/></a>
 
-            <SiGmail/>
+            <a href = "mailto:fesoaresma@gmail.com" target = "_blank"><SiGmail/></a>
 
-            <FaGithub/>
+            <a href = "https://github.com/FelipeS45" target = "_blank"><FaGithub/></a>
           </div>
 
         </Contact>

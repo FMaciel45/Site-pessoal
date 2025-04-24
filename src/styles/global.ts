@@ -7,6 +7,10 @@ export default createGlobalStyle`
     box-sizing: border-box;
   }
 
+  html {
+    scroll-behavior: smooth;
+  }
+
   body {
     background-color: ${({ theme }) => theme.COLORS.BACKGROUND_COLOR};
     color: ${({theme}) => theme.COLORS.FONT_COLOR};
@@ -18,19 +22,17 @@ export default createGlobalStyle`
     outline: none;
   }
 
-  button {
-    font-family: "Poppins", sans-serif;
-  }
-
   a, button {
     font-size: 22px;
+    font-family: "Poppins", sans-serif;
     color: ${({theme}) => theme.COLORS.FONT_COLOR};
+
     text-decoration: none;
     cursor: pointer;
     transition: filter 0.3s;
   }
 
   a:hover, button:hover {
-    filter: brightness(0.7);
+    filter: brightness(0.8);
   }
 `;
