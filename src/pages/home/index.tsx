@@ -9,6 +9,7 @@ import ThomasLogo from "../../assets/ctj.jpg";
 import RocketLogo from "../../assets/rocket.jpg";
 import FoodEx from "../../assets/FoodEx.png";
 import RocketN from "../../assets/RocketN.png";
+import SitePessoal from "../../assets/site.png";
 
 import { FaReact, FaNodeJs, FaLinkedin, FaGithub } from "react-icons/fa";
 import { SiJavascript, SiTypescript, SiSqlite, SiGmail } from "react-icons/si";
@@ -55,7 +56,7 @@ export function Home() {
           <div className="about-wrapper">
             <h2>Sobre Mim</h2>
 
-            <p>Desenvolvedor Web Fullstack e estudante de Ciência da Computação com previsão de formatura para 06/2026. Tenho cerca de 1 ano de experiência com o desenvolvimento Web por meio de projetos pessoais e acadêmicos. Busco aprender e me aperfeiçoar em novas tecnologias para me profissionalizar como desenvolvedor.</p>
+            <p>Desenvolvedor Web Fullstack e estudante de Ciência da Computação com previsão de formatura para 06/2026. Tenho cerca de 1 ano de experiência com o desenvolvimento Web por meio de projetos pessoais e acadêmicos. Além disso, busco aprender e me aperfeiçoar em novas tecnologias para me profissionalizar como desenvolvedor.</p>
           </div>
 
           <h3>Formações em andamento e concluídas</h3>
@@ -64,9 +65,9 @@ export function Home() {
 
             <div className="course-wrapper">
               <div className="content-wrapper">
-                <h4>Bacharelado em Ciência da Computação</h4>
+                <h4>Bacharelado - Ciência da Computação</h4>
 
-                <h5>Instituto de Educação Superior de Brasília - IESB</h5>
+                <h5>Instituto de Educação Superior de Brasília</h5>
 
                 <ul>
                   <li><span>Início:</span> Agosto/2021</li>
@@ -124,16 +125,20 @@ export function Home() {
 
           <div className="techs-logos">
 
-            <FaReact className = "reactIcon"/>
+            <div className="logosOne-wrapper">
+              <FaReact className = "reactIcon"/>
 
-            <FaNodeJs className = "nodeIcon"/>
+              <FaNodeJs className = "nodeIcon"/>
 
-            <SiJavascript className = "jsIcon"/>
+              <SiJavascript className = "jsIcon"/>
+            </div>
 
-            <SiTypescript className = "tsIcon"/>
+            <div className="logosTwo-wrapper">
+              <SiTypescript className = "tsIcon"/>
 
-            <SiSqlite className = "sqliteIcon"/>
-
+              <SiSqlite className = "sqliteIcon"/>
+            </div>
+           
           </div>
 
         </Techs>
@@ -179,7 +184,7 @@ export function Home() {
               <h4>Site Pessoal</h4>
 
               <div className="img-wrapper">
-                <img src = {RocketLogo} alt="Imagem da home do meu site pessoal"/>
+                <img src = {SitePessoal} alt="Imagem da home do meu site pessoal"/>
               </div>
 
               <p>Projeto de site com portifólio pessoal e informações de contato. Desenvolvido apenas com React e Typescript. Foi utilizado o conceito de CSS-in-JS com a biblioteca React Styled Components e a biblioteca React Icons.</p>
@@ -200,7 +205,6 @@ export function Home() {
           <p>Estou animado para ser o próximo desenvolvedor do time da sua empresa!</p>
 
           <div className="contacts-wrapper">
-            
             <a href = "https://www.linkedin.com/in/f-maciel/" target = "_blank"><FaLinkedin/></a>
 
             <a href = "mailto:fesoaresma@gmail.com" target = "_blank"><SiGmail/></a>
