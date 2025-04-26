@@ -10,7 +10,7 @@ O projeto do meu site pessoal é uma aplicação Web desenvolvida com ReactJS e 
 
 ### Link do deploy da aplicação
 
-https://siterocketnotess.netlify.app/
+https://devfelipemaciel.netlify.app/
  
 ### Executando o Frontend do projeto
 
