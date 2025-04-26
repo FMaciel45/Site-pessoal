@@ -1,24 +1,21 @@
 import styled from "styled-components";
-
 import { DEVICE_BREAKPOINTS } from "../../styles/deviceBreakpoints";
 
 export const Container = styled.div`
-  width: 100%;
+  width: 100vw;
   min-height: 100vh;
-  overflow-x: hidden;
-`
-
+`;
 
 export const Content = styled.div`
   display: grid;
   grid-template-areas:
-  "header"
-  "profile"
-  "about"
-  "stack"
-  "projects"
-  "contact"
-  "footer";
+    "header"
+    "profile"
+    "about"
+    "stack"
+    "projects"
+    "contact"
+    "footer";
 
   h1 {
     font-size: 54px;
@@ -32,32 +29,26 @@ export const Content = styled.div`
   h3 {
     font-size: 24px;
     text-align: center;
-
-    margin: 36px 0px;
+    margin: 36px 0;
   }
 
   @media (max-width: ${DEVICE_BREAKPOINTS.MD}) {
     h1 {
-      font-size: 120px;
+      font-size: 32px;
     }
-
     h2 {
-      font-size: 80px;
+      font-size: 24px;
     }
-
     h3 {
-      font-size: 52px;
-
-      margin-top: 64px;
+      font-size: 20px;
+      margin: 24px 0;
     }
   }
-`
+`;
 
 export const Profile = styled.div`
   grid-area: profile;
-
-  padding: 96px 0px 0px 0px;
-
+  padding: 96px 0 0 0;
   margin-top: 96px;
 
   display: flex;
@@ -68,7 +59,6 @@ export const Profile = styled.div`
   .myPicture {
     width: 345px;
     height: 365px;
-
     border-radius: 50%;
   }
 
@@ -80,340 +70,235 @@ export const Profile = styled.div`
     p {
       font-size: 18px;
       margin-top: 18px;
+      text-align: center;
     }
 
     .reactIcon {
-      color: ${({theme}) => theme.COLORS.REACT_ICON};
-
-      font-size: 156px;
-
+      color: ${({ theme }) => theme.COLORS.REACT_ICON};
+      font-size: 120px;
       margin-bottom: 14px;
     }
   }
 
   .buttons-wrapper {
     margin-top: 14px;
-
     display: flex;
-    flex-direction: row;
-    align-items: center;
     gap: 20px;
 
     a {
-      padding: 14px 20px;
-
-      background-color: ${({theme}) => theme.COLORS.BUTTON_BACKGROUND};
-
+      padding: 12px 20px;
+      background-color: ${({ theme }) => theme.COLORS.BUTTON_BACKGROUND};
       border: none;
       border-radius: 5px;
-
       font-size: 18px;
     }
   }
 
   @media (max-width: ${DEVICE_BREAKPOINTS.MD}) {
-    display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
 
     .myPicture {
-      width: 650px;
-      height: 680px;
-
-      margin-top: 96px;
+      width: 200px;
+      height: 210px;
+      margin-top: 32px;
     }
 
     .description-wrapper {
       .reactIcon {
-        font-size: 216px;
+        font-size: 80px;
       }
 
       p {
-        font-size: 44px;
-      }
-
-      a {
-        font-size: 42px;
-
-        margin-top: 24px;
-
-        padding: 20px 32px;
+        font-size: 16px;
       }
     }
+
+    .buttons-wrapper a {
+      font-size: 16px;
+      padding: 10px 16px;
+    }
   }
-`
+`;
 
 export const About = styled.div`
   grid-area: about;
-
   margin-top: 96px;
 
-  .about-wrapper {    
+  .about-wrapper {
     p {
-      padding: 0px 192px;
-
+      padding: 0 32px;
       font-size: 18px;
-    
       margin-top: 24px;
+      text-align: center;
     }
   }
 
   .courses-wrapper {
+    margin-top: 48px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     gap: 36px;
+    align-items: center;
 
     .course-wrapper {
-      border: 3px solid ${({theme}) => theme.COLORS.BORDER_COLOR};
+      width: 90%;
+      max-width: 850px;
+      border: 3px solid ${({ theme }) => theme.COLORS.BORDER_COLOR};
       border-radius: 8px;
-
       padding: 20px;
-
-      width: 850px;
-
       display: flex;
+      flex-direction: column;
       align-items: center;
-      justify-content: space-between;
+      text-align: center;
 
       .content-wrapper {
         h4 {
           font-size: 24px;
         }
-
         h5 {
           font-size: 20px;
-
-          margin: 4px 0px 24px 0px;
+          margin: 8px 0;
         }
-
         ul li {
           font-size: 18px;
-
-          margin-left: 24px;
-
           list-style: none;
-
-          span {
-            font-weight: bold;
-          }
+          margin-left: 0;
         }
       }
 
       img {
-        width: 180px;
-        height: 180px;
-
+        width: 150px;
+        height: 150px;
         border-radius: 5px;
+        margin-top: 16px;
       }
     }
   }
 
   @media (max-width: ${DEVICE_BREAKPOINTS.MD}) {
-    margin-top: 128px;
-    
-    .about-wrapper {
-      p {
-        font-size: 38px;
-        text-align: center;
-
-        padding: 0px 64px;
-      }
+    .about-wrapper p {
+      font-size: 16px;
     }
 
-    .courses-wrapper {
+    .courses-wrapper .course-wrapper {
+      padding: 16px;
 
-      .course-wrapper {
-        img {
-          width: 260px;
-          height: 260px;
+      .content-wrapper {
+        h4 {
+          font-size: 20px;
         }
-
-        padding: 36px 24px;
-
-        border: 5px solid ${({theme}) => theme.COLORS.BORDER_COLOR};
-
-        .content-wrapper {
-          h4 {
-            font-size: 50px;
-          }
-
-          h5 {
-            font-size: 40px;
-
-            margin: 12px 0px;
-          }
-
-          ul li {
-            font-size: 38px;
-
-            margin-left: 24px;
-
-            list-style: none;
-          }
+        h5 {
+          font-size: 18px;
         }
+        ul li {
+          font-size: 16px;
+        }
+      }
+
+      img {
+        width: 120px;
+        height: 120px;
       }
     }
   }
-`
+`;
 
 export const Techs = styled.div`
   grid-area: stack;
-
   margin-top: 48px;
-
-  padding: 32px 58px 48px 58px;
+  padding: 32px;
 
   .techs-logos {
-    margin-top: 48px;
-
+    margin-top: 32px;
     display: flex;
-    align-items: center;
+    flex-wrap: wrap;
     justify-content: center;
-    flex-direction: row;
-    gap: 72px;
-
-    font-size: 120px;
-
-    .logosOne-wrapper, .logosTwo-wrapper {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: row;
-      gap: 72px;
-    }
+    gap: 48px;
+    font-size: 80px;
 
     .reactIcon {
-      color: ${({theme}) => theme.COLORS.REACT_ICON};
+      color: ${({ theme }) => theme.COLORS.REACT_ICON};
     }
-
     .nodeIcon {
-      color: ${({theme}) => theme.COLORS.NODE_ICON};
+      color: ${({ theme }) => theme.COLORS.NODE_ICON};
     }
-
     .jsIcon {
-      color: ${({theme}) => theme.COLORS.JS_ICON};
+      color: ${({ theme }) => theme.COLORS.JS_ICON};
     }
-
     .tsIcon {
-      color: ${({theme}) => theme.COLORS.TS_ICON};
+      color: ${({ theme }) => theme.COLORS.TS_ICON};
     }
-
     .sqliteIcon {
-      color: ${({theme}) => theme.COLORS.SQLITE_ICON};
-    }
-
-    .reactIcon, .nodeIcon, .jsIcon, .tsIcon, .sqliteIcon {
-      transition: transform 0.3s ease;
-    }
-
-    .reactIcon:hover, .nodeIcon:hover, .jsIcon:hover, .tsIcon:hover, .sqliteIcon:hover {
-      transform: scale(1.25);
+      color: ${({ theme }) => theme.COLORS.SQLITE_ICON};
     }
   }
 
   @media (max-width: ${DEVICE_BREAKPOINTS.MD}) {
-    margin-top: 120px;
+    margin-top: 64px;
 
     .techs-logos {
-      font-size: 220px;
-      
-      display: flex;
-      flex-direction: column;
-      gap: 120px;
-
-      .logosOne-wrapper {
-        display: flex;
-        align-items: center;
-        gap: 120px;
-      }
-
-      .logosTwo-wrapper {
-        display: flex;
-        align-items: center;
-        gap: 120px;
-      }
+      font-size: 60px;
+      gap: 32px;
     }
   }
-`
+`;
 
 export const Projects = styled.div`
   grid-area: projects;
-
   margin-top: 48px;
-  padding: 0px 58px;
-
-  img {
-    width: 270px;
-    height: 270px;
-
-    border-radius: 5px;
-
-    transition: transform 0.4s ease;
-  }
-
-  img:hover {
-    transform: scale(1.15);
-  }
+  padding: 0 32px;
 
   .projects-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    gap: 32px;
-
     margin-top: 48px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    justify-content: center;
 
     .project-wrapper {
-      padding: 32px;
-
+      padding: 24px;
       max-width: 380px;
-      min-height: 705px;
-
-      border: 3px solid ${({theme}) => theme.COLORS.BORDER_COLOR};
+      min-height: 550px;
+      border: 3px solid ${({ theme }) => theme.COLORS.BORDER_COLOR};
       border-radius: 5px;
+      text-align: center;
 
       h4 {
-        text-align: center;
         font-size: 24px;
-
-        margin-bottom: 24px;
+        margin-bottom: 16px;
       }
 
       p {
         font-size: 16px;
-
-        margin-top: 26px;
-        text-align: center;
+        margin-top: 16px;
       }
 
-      .img-wrapper {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+      .img-wrapper img {
+        width: 100%;
+        max-width: 270px;
+        height: auto;
+        border-radius: 5px;
+        transition: transform 0.4s ease;
+      }
+
+      .img-wrapper img:hover {
+        transform: scale(1.1);
       }
 
       .links-wrapper {
         margin-top: 24px;
-
         display: flex;
-        align-items: center;
         flex-direction: column;
-        gap: 14px;
+        gap: 12px;
 
         button {
-          background-color: ${({theme}) => theme.COLORS.BUTTON_BACKGROUND};
-
+          background-color: ${({ theme }) => theme.COLORS.BUTTON_BACKGROUND};
           padding: 8px 16px;
-
           border: none;
           border-radius: 5px;
 
           a {
-            font-size: 18px;
+            font-size: 16px;
           }
         }
       }
@@ -421,94 +306,51 @@ export const Projects = styled.div`
   }
 
   @media (max-width: ${DEVICE_BREAKPOINTS.MD}) {
-    margin-top: 120px;
+    margin-top: 64px;
 
-    img {
-      width: 750px;
-      height: 750px;
+    .project-wrapper {
+      max-width: 100%;
     }
 
-    .projects-wrapper {
-      flex-direction: column;
-      gap: 64px;
-
-      .project-wrapper {
-        max-width: 865px;
-
-        padding: 48px 24px 86px 24px;
-
-        border: 6px solid ${({theme}) => theme.COLORS.BORDER_COLOR};
-
-        h4 {
-          font-size: 52px;
-        }
-
-        p {
-          font-size: 38px;
-
-          margin-top: 48px;
-        }
-        
-        .links-wrapper {
-          margin-top: 72px;
-
-          gap: 32px;
-
-          button {
-            padding: 16px 32px;
-
-            a {
-              font-size: 42px;
-            }
-          }
-        }
-      }
+    .img-wrapper img {
+      max-width: 100%;
     }
   }
-`
+`;
 
 export const Contact = styled.div`
   grid-area: contact;
-
   margin-top: 72px;
+  padding: 0 32px;
 
   p {
     font-size: 22px;
     text-align: center;
-
-    margin: 24px 0px;
+    margin: 24px 0;
   }
 
   .contacts-wrapper {
+    margin-top: 32px;
     display: flex;
-    align-items: center;
-    flex-direction: row;
-    gap: 48px;
-
     justify-content: center;
-
-    margin-bottom: 120px;
+    gap: 32px;
 
     a {
-      font-size: 76px;
-
-      margin-top: 24px;
+      font-size: 48px;
     }
   }
 
   @media (max-width: ${DEVICE_BREAKPOINTS.MD}) {
-    margin-top: 120px;
-
     p {
-      font-size: 48px;
+      font-size: 18px;
     }
 
     .contacts-wrapper {
-      gap: 76px;
+      gap: 24px;
 
       a {
-        font-size: 126px;
+        font-size: 36px;
       }
     }
   }
-`
+`;
