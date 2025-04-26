@@ -7,8 +7,11 @@ export default createGlobalStyle`
     box-sizing: border-box;
   }
 
-  html {
+  html, body {
     scroll-behavior: smooth;
+
+    width: 100%;
+    overflow-x: hidden;
   }
 
   body {
