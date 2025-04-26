@@ -20,6 +20,8 @@ export const Container = styled.div`
   gap: 64px;
 
   @media (max-width: ${DEVICE_BREAKPOINTS.MD}) {
+    padding: 36px 0px;
+    
     a {
       font-size: 36px;
     }

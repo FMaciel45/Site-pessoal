@@ -187,10 +187,10 @@ export function Home() {
                 <img src = {SitePessoal} alt="Imagem da home do meu site pessoal"/>
               </div>
 
-              <p>Projeto de site com portifólio pessoal e informações de contato. Desenvolvido apenas com React e Typescript. Foi utilizado o conceito de CSS-in-JS com a biblioteca React Styled Components e a biblioteca React Icons.</p>
+              <p>Projeto de site com portifólio pessoal e informações de contato. Desenvolvido apenas com React e Typescript. Foi utilizado o conceito de CSS-in-JS com a biblioteca React Styled Components e a biblioteca React Icons. Possui tela responsiva a dispositivos mobile e desktop.</p>
 
               <div className="links-wrapper">
-                <button><a href = "https://github.com/FelipeS45/RocketNotes-frontend" target = "_blank" >Repositório do Frontend</a></button>
+                <button><a href = "https://github.com/FelipeS45/Site-pessoal" target = "_blank" >Repositório do Frontend</a></button>
               </div>
             </div>
 

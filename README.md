@@ -1,5 +1,5 @@
 <h1 align = "center">
-  <img src = "./src/assets/site.png" width = "680" height = "580">
+  <img src = "./src/assets/site.png" width = "700" height = "580">
 </h1>
 
 ## Sobre o projeto

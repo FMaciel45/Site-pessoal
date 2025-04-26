@@ -23,7 +23,7 @@ export const Container = styled.div`
   }
 
   @media (max-width: ${DEVICE_BREAKPOINTS.MD}) {
-    padding: 28px 48px;
+    padding: 36px 48px;
     
     p {
       font-size: 24px; 

@@ -2,7 +2,7 @@ const theme = {
   COLORS: {
 
     FONT_COLOR: "#FFFFFF",
-    BACKGROUND_COLOR: "#000000",
+    BACKGROUND_COLOR: "#070707",
     BACKGROUND_COLOR2: "#1a1a1a",
     BUTTON_BACKGROUND: "#1a1a1a",
     REACT_ICON: "#61DBFB",

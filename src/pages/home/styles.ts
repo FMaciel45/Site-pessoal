@@ -28,7 +28,7 @@ export const Content = styled.div`
   }
 
   h3 {
-    font-size: 20px;
+    font-size: 24px;
     text-align: center;
 
     margin: 36px 0px;
@@ -55,6 +55,13 @@ export const Profile = styled.div`
   grid-area: profile;
 
   padding: 96px 0px 0px 0px;
+
+  margin-top: 96px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 96px;
 
   .myPicture {
     width: 345px;
@@ -101,13 +108,6 @@ export const Profile = styled.div`
       font-size: 18px;
     }
   }
-
-  margin-top: 96px;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 96px;
 
   @media (max-width: ${DEVICE_BREAKPOINTS.MD}) {
     display: flex;
@@ -162,7 +162,7 @@ export const About = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 24px;
+    gap: 36px;
 
     .course-wrapper {
       border: 3px solid ${({theme}) => theme.COLORS.BORDER_COLOR};
@@ -275,6 +275,14 @@ export const Techs = styled.div`
 
     font-size: 120px;
 
+    .logosOne-wrapper, .logosTwo-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: row;
+      gap: 72px;
+    }
+
     .reactIcon {
       color: ${({theme}) => theme.COLORS.REACT_ICON};
     }
@@ -324,14 +332,6 @@ export const Techs = styled.div`
         display: flex;
         align-items: center;
         gap: 120px;
-      }
-
-      .reactIcon, .nodeIcon, .jsIcon, .tsIcon, .sqliteIcon {
-        transition: transform 0.3s ease;
-      }
-
-      .reactIcon:hover, .nodeIcon:hover, .jsIcon:hover, .tsIcon:hover, .sqliteIcon:hover {
-        transform: scale(1.25);
       }
     }
   }
