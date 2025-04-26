@@ -36,7 +36,7 @@ export const Content = styled.div`
 
   @media (max-width: ${DEVICE_BREAKPOINTS.MD}) {
     h1 {
-      font-size: 32px;
+      font-size: 120px;
     }
 
     h2 {
