@@ -3,9 +3,11 @@ import styled from "styled-components";
 import { DEVICE_BREAKPOINTS } from "../../styles/deviceBreakpoints";
 
 export const Container = styled.div`
-  max-width: 100vw;
-  height: 100vh;
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
 `
+
 
 export const Content = styled.div`
   display: grid;

@@ -9,9 +9,6 @@ export default createGlobalStyle`
 
   html, body {
     scroll-behavior: smooth;
-
-    width: 100%;
-    overflow-x: hidden;
   }
 
   body {
