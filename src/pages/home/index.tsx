@@ -41,7 +41,7 @@ export function Home() {
 
             <div className="buttons-wrapper">
 
-              <a href = "../../../public/CVFelipe.pdf" download>Download CV</a>
+              <a href = "/CVFelipe.pdf" download>Download CV</a>
 
               <a href = "mailto:fesoaresma@gmail.com" >Entrar em contato</a>
 

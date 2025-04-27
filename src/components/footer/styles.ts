@@ -7,7 +7,7 @@ export const Container = styled.div`
 
   background-color: ${({theme}) => theme.COLORS.BACKGROUND_COLOR2};
   
-  padding: 28px 92px;
+  padding: 28px 128px;
 
   position: fixed;
   bottom: 0;
@@ -23,10 +23,10 @@ export const Container = styled.div`
   }
 
   @media (max-width: ${DEVICE_BREAKPOINTS.MD}) {
-    padding: 36px 48px;
+    padding: 16px 45px;
     
     p {
-      font-size: 24px; 
+      font-size: 10px; 
     }
   }
 `
