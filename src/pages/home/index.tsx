@@ -158,9 +158,9 @@ export function Home() {
               <p>Projeto de site para pedidos em um restaurante fictício. Desenvolvido com NodeJS e ReactJS com Javascript. Foi utilizado o SGBD SQLite para armazenamento local de dados. Projeto em desenvolvimento para implementação de novas features e melhorias.</p>
 
               <div className="links-wrapper">
-                <button><a href = "https://github.com/FelipeS45/Frontend-FoodExplorer" target = "_blank" >Repositório do Frontend</a></button>
+                <button><a href = "https://github.com/FMaciel45/Frontend-FoodExplorer" target = "_blank" >Repositório do Frontend</a></button>
 
-                <button><a href = "https://github.com/FelipeS45/API-Backend-FoodExplorer" target = "_blank" >Repositório do Backend</a></button>
+                <button><a href = "https://github.com/FMaciel45/API-Backend-FoodExplorer" target = "_blank" >Repositório do Backend</a></button>
               </div>
             </div>
 
@@ -174,9 +174,9 @@ export function Home() {
               <p>Projeto pessoal de site para armazenamento de notas/lembretes pessoais. Desenvolvido com NodeJS e ReactJS com Javascript. Além disso, foi utilizado o SGBD SQLite para armazenamento local de dados na aplicação.</p>
 
               <div className="links-wrapper">
-                <button><a href = "https://github.com/FelipeS45/RocketNotes-frontend" target = "_blank" >Repositório do Frontend</a></button>
+                <button><a href = "https://github.com/FMaciel45/RocketNotes-frontend" target = "_blank" >Repositório do Frontend</a></button>
 
-                <button><a href = "https://github.com/FelipeS45/RocketNotes-API-backend" target = "_blank" >Repositório do Backend</a></button>
+                <button><a href = "https://github.com/FMaciel45/RocketNotes-API-backend" target = "_blank" >Repositório do Backend</a></button>
               </div>
             </div>
 
@@ -190,7 +190,7 @@ export function Home() {
               <p>Projeto de site com portifólio pessoal e informações de contato. Desenvolvido apenas com React e Typescript. Foi utilizado o conceito de CSS-in-JS com a biblioteca React Styled Components e a biblioteca React Icons. Possui tela responsiva a dispositivos mobile e desktop.</p>
 
               <div className="links-wrapper">
-                <button><a href = "https://github.com/FelipeS45/Site-pessoal" target = "_blank" >Repositório do Frontend</a></button>
+                <button><a href = "https://github.com/FMaciel45/Site-pessoal" target = "_blank" >Repositório do Frontend</a></button>
               </div>
             </div>
 
@@ -209,7 +209,7 @@ export function Home() {
 
             <a href = "mailto:fesoaresma@gmail.com" target = "_blank"><SiGmail/></a>
 
-            <a href = "https://github.com/FelipeS45" target = "_blank"><FaGithub/></a>
+            <a href = "https://github.com/FMaciel45" target = "_blank"><FaGithub/></a>
           </div>
 
         </Contact>
