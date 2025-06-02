@@ -274,11 +274,23 @@ export const Techs = styled.div`
       color: ${({ theme }) => theme.COLORS.SQLITE_ICON};
     }
 
-    .reactIcon, .nodeIcon, .jsIcon, .tsIcon, .sqliteIcon {
+    .csharpIcon {
+      color: ${({ theme }) => theme.COLORS.CSHARP_ICON};
+    }
+
+    .dotnetIcon {
+      color: ${({ theme }) => theme.COLORS.DOTNET_ICON};
+    }
+
+    .mysqlIcon {
+      color: ${({ theme }) => theme.COLORS.MYSQL_ICON};
+    }
+
+    .reactIcon, .nodeIcon, .jsIcon, .tsIcon, .sqliteIcon, .csharpIcon, .dotnetIcon, .mysqlIcon {
       transition: transform 0.3s ease;
     }
  
-    .reactIcon:hover, .nodeIcon:hover, .jsIcon:hover, .tsIcon:hover, .sqliteIcon:hover {
+    .reactIcon:hover, .nodeIcon:hover, .jsIcon:hover, .tsIcon:hover, .sqliteIcon:hover, .csharpIcon:hover, .dotnetIcon:hover, .mysqlIcon:hover {
       transform: scale(1.25);
     }
 

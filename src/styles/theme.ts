@@ -10,6 +10,9 @@ const theme = {
     JS_ICON: "#F7DF1E",
     TS_ICON: "#3178C6",
     SQLITE_ICON: "#003B57",
+    CSHARP_ICON: "#9B4F96",
+    DOTNET_ICON: "#512BD4",
+    MYSQL_ICON: "#00758F",
     BORDER_COLOR: "#1a1a1a",
 
   },

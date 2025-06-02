@@ -10,9 +10,11 @@ import RocketLogo from "../../assets/rocket.jpg";
 import FoodEx from "../../assets/FoodEx.png";
 import RocketN from "../../assets/RocketN.png";
 import SitePessoal from "../../assets/site.png";
+import CashFlow from "../../assets/cashflowprint.png";
 
 import { FaReact, FaNodeJs, FaLinkedin, FaGithub } from "react-icons/fa";
-import { SiJavascript, SiTypescript, SiSqlite, SiGmail } from "react-icons/si";
+import { SiJavascript, SiTypescript, SiSqlite, SiGmail, SiDotnet, SiMysql  } from "react-icons/si";
+import { TbBrandCSharp } from "react-icons/tb";
 
 export function Home() {
 
@@ -113,6 +115,23 @@ export function Home() {
                 <img src = {RocketLogo} alt="Logo da instituição de ensino Rocketseat" />
               </div>
             </div>
+
+            <div className="course-wrapper">
+              <div className="content-wrapper">
+                <h4>Formação C# / .NET</h4>
+
+                <h5>Rocketseat</h5>
+
+                <ul>
+                  <li><span>Início:</span> Maio/2024</li>
+                  <li><span>Conclusão:</span> Junho/2025</li>
+                </ul>
+              </div>
+
+              <div className="image-wrapper">
+                <img src = {RocketLogo} alt="Logo da instituição de ensino Rocketseat" />
+              </div>
+            </div>
           </div>
 
         </About>
@@ -131,12 +150,18 @@ export function Home() {
               <FaNodeJs className = "nodeIcon"/>
 
               <SiJavascript className = "jsIcon"/>
+
+              <SiTypescript className = "tsIcon"/>
             </div>
 
             <div className="logosTwo-wrapper">
-              <SiTypescript className = "tsIcon"/>
+              <TbBrandCSharp className = "csharpIcon"/>
+              
+              <SiDotnet className = "dotnetIcon"/>
 
               <SiSqlite className = "sqliteIcon"/>
+
+              <SiMysql className = "mysqlIcon"/>
             </div>
            
           </div>
@@ -177,6 +202,20 @@ export function Home() {
                 <button><a href = "https://github.com/FMaciel45/RocketNotes-frontend" target = "_blank" >Repositório do Frontend</a></button>
 
                 <button><a href = "https://github.com/FMaciel45/RocketNotes-API-backend" target = "_blank" >Repositório do Backend</a></button>
+              </div>
+            </div>
+
+            <div className="project-wrapper">
+              <h4>CashFlow</h4>
+
+              <div className="img-wrapper">
+                <img src = {CashFlow} alt="Imagem da interface do Swagger referente ao projeto"/>
+              </div>
+
+              <p>Projeto pessoal de aplicação backend (API RESTful) desenvolvido com ASP.NET 8 Core e C# para um sistema de monitoramento de despesas pessoais. Dessa forma, foi utilizado o SGBD MySQL para armazenamento dos dados da aplicação.</p>
+
+              <div className="links-wrapper">
+                <button><a href = "https://github.com/FMaciel45/CashFlow-API-Backend" target = "_blank" >Repositório do Backend</a></button>
               </div>
             </div>
 
