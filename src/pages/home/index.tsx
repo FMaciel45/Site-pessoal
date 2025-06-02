@@ -180,7 +180,7 @@ export function Home() {
                 <img src = {FoodEx} alt = "Imagem da tela home do site Food Explorer" />  
               </div>
 
-              <p>Projeto de site para pedidos em um restaurante fictício. Desenvolvido com NodeJS e ReactJS com Javascript. Foi utilizado o SGBD SQLite para armazenamento local de dados. Projeto em desenvolvimento para implementação de novas features e melhorias.</p>
+              <p>Projeto de site para pedidos em um restaurante fictício. Desenvolvido com NodeJS e ReactJS com Javascript. Foi utilizado o SGBD SQLite para armazenamento local de dados. Projeto em desenvolvimento para implementação de novas features.</p>
 
               <div className="links-wrapper">
                 <button><a href = "https://github.com/FMaciel45/Frontend-FoodExplorer" target = "_blank" >Repositório do Frontend</a></button>

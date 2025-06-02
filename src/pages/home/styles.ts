@@ -100,8 +100,7 @@ export const Profile = styled.div`
 
   @media (max-width: ${DEVICE_BREAKPOINTS.MD}) {
     flex-direction: column;
-
-    padding: 0px;
+    padding: 0;
 
     .myPicture {
       width: 270px;
@@ -112,7 +111,6 @@ export const Profile = styled.div`
     .description-wrapper {
       .reactIcon {
         font-size: 96px;
-
         margin-top: -76px;
       }
 
@@ -123,7 +121,7 @@ export const Profile = styled.div`
 
     .buttons-wrapper {
       flex-direction: column;
-      
+
       a {
         font-size: 16px;
         text-align: center;
@@ -140,7 +138,7 @@ export const About = styled.div`
   .about-wrapper {
     p {
       padding: 0 280px;
-      margin: 24px 0px; 
+      margin: 24px 0;
 
       font-size: 18px;
       text-align: center;
@@ -178,7 +176,7 @@ export const About = styled.div`
           font-size: 22px;
           margin: 8px 0;
         }
-        
+
         ul li {
           font-size: 18px;
           list-style: none;
@@ -207,8 +205,7 @@ export const About = styled.div`
 
       p {
         font-size: 14px;
-
-        padding: 0px 36px;
+        padding: 0 36px;
       }
     }
 
@@ -216,6 +213,9 @@ export const About = styled.div`
       gap: 14px;
 
       .course-wrapper {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
         padding: 14px 8px;
 
         .content-wrapper {
@@ -229,13 +229,14 @@ export const About = styled.div`
 
           ul li {
             font-size: 14px;
-            margin-left: 10px;
+            margin-left: 0;
           }
         }
 
         img {
           width: 120px;
           height: 120px;
+          margin-top: 12px;
         }
       }
     }
@@ -273,32 +274,38 @@ export const Techs = styled.div`
     .sqliteIcon {
       color: ${({ theme }) => theme.COLORS.SQLITE_ICON};
     }
-
     .csharpIcon {
       color: ${({ theme }) => theme.COLORS.CSHARP_ICON};
     }
-
     .dotnetIcon {
       color: ${({ theme }) => theme.COLORS.DOTNET_ICON};
     }
-
     .mysqlIcon {
       color: ${({ theme }) => theme.COLORS.MYSQL_ICON};
     }
 
-    .reactIcon, .nodeIcon, .jsIcon, .tsIcon, .sqliteIcon, .csharpIcon, .dotnetIcon, .mysqlIcon {
+    .reactIcon,
+    .nodeIcon,
+    .jsIcon,
+    .tsIcon,
+    .sqliteIcon,
+    .csharpIcon,
+    .dotnetIcon,
+    .mysqlIcon {
       transition: transform 0.3s ease;
-    }
- 
-    .reactIcon:hover, .nodeIcon:hover, .jsIcon:hover, .tsIcon:hover, .sqliteIcon:hover, .csharpIcon:hover, .dotnetIcon:hover, .mysqlIcon:hover {
-      transform: scale(1.25);
+
+      &:hover {
+        transform: scale(1.25);
+      }
     }
 
-    .logosOne-wrapper, .logosTwo-wrapper {
+    .logosOne-wrapper,
+    .logosTwo-wrapper {
       display: flex;
       align-items: center;
       justify-content: center;
       gap: 64px;
+      flex-wrap: wrap;
     }
   }
 
@@ -309,8 +316,9 @@ export const Techs = styled.div`
       font-size: 64px;
       gap: 32px;
 
-      .logosOne-wrapper, .logosTwo-wrapper {
-        gap: 48px;
+      .logosOne-wrapper,
+      .logosTwo-wrapper {
+        gap: 32px;
       }
     }
   }
@@ -320,70 +328,65 @@ export const Projects = styled.div`
   grid-area: projects;
 
   margin-top: 48px;
-
   padding: 0 32px;
 
   .projects-wrapper {
     margin-top: 48px;
 
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 32px;
 
     .project-wrapper {
       padding: 24px;
-
       max-width: 380px;
-      min-height: 550px;
 
-      border: 3px solid ${({ theme }) => theme.COLORS.BORDER_COLOR};
-      border-radius: 5px;
+      border: 2px solid ${({ theme }) => theme.COLORS.BORDER_COLOR};
+      border-radius: 8px;
 
-      text-align: center;
+      display: flex;
+      flex-direction: column;
 
       h4 {
-        font-size: 26px;
+        font-size: 24px;
+        margin-bottom: 12px;
+        text-align: center;
+      }
 
-        margin-bottom: 16px;
+      .img-wrapper {
+        width: 100%;
+        img {
+          width: 100%;
+          height: auto;
+          border-radius: 4px;
+          margin-bottom: 12px;
+        }
       }
 
       p {
-        font-size: 17px;
-
-        margin-top: 16px;
-      }
-
-      .img-wrapper img {
-        width: 100%;
-        max-width: 270px;
-        height: auto;
-
-        border-radius: 5px;
-
-        transition: transform 0.4s ease;
-      }
-
-      .img-wrapper img:hover {
-        transform: scale(1.1);
+        font-size: 16px;
+        margin-bottom: 12px;
+        text-align: center;
       }
 
       .links-wrapper {
-        margin-top: 24px;
-
         display: flex;
         flex-direction: column;
-        gap: 12px;
+        gap: 8px;
+
+        margin-top: 10px;
 
         button {
+          padding: 6px 12px;
           background-color: ${({ theme }) => theme.COLORS.BUTTON_BACKGROUND};
-
-          padding: 8px 16px;
-
           border: none;
           border-radius: 5px;
 
           a {
-            font-size: 17px;
+            font-size: 15px;
+            text-decoration: none;
+            color: inherit;
           }
         }
       }
@@ -391,44 +394,24 @@ export const Projects = styled.div`
   }
 
   @media (max-width: ${DEVICE_BREAKPOINTS.MD}) {
-    margin-top: 24px;
+    padding: 0 16px;
+
+    margin-top: 8px;
 
     .projects-wrapper {
-      flex-direction: column;
+      gap: 16px;
 
-      margin-top: 32px;
+      margin-top: 24px;
 
       .project-wrapper {
-        max-width: 100%;
-
-        .img-wrapper img {
-          max-width: 100%;
-
-          transition: transform 0.4s ease;
-        }
-
-        .img-wrapper img:hover {
-          transform: scale(1.05);
-        }
+        padding: 16px;
 
         h4 {
-          font-size: 20px;
-
-          margin-bottom: 16px;
+          font-size: 18px;
         }
 
         p {
           font-size: 14px;
-
-          margin-top: 16px;
-        }
-
-        .links-wrapper {
-          button {
-            a {
-              font-size: 16px;
-            }
-          }
         }
       }
     }
@@ -438,40 +421,36 @@ export const Projects = styled.div`
 export const Contact = styled.div`
   grid-area: contact;
 
-  margin: 72px 0px 128px 0px;
-  padding: 0 32px;
+  margin: 16px 0px 72px 0px;
+  padding: 32px;
 
-  p {
-    font-size: 22px;
-    text-align: center;
-    margin: 24px 0;
-  }
+  text-align: center;
 
   .contacts-wrapper {
-    margin-top: 32px;
+    margin-top: 24px;
 
     display: flex;
     justify-content: center;
-    align-items: center;
-    gap: 48px;
+    gap: 24px;
 
     a {
-      font-size: 64px;
+      font-size: 48px;
+      transition: transform 0.3s ease;
+
+      &:hover {
+        transform: scale(1.2);
+      }
     }
   }
 
   @media (max-width: ${DEVICE_BREAKPOINTS.MD}) {
-    margin: 48px 0px 96px 0px;
-    
-    p {
-      font-size: 18px;
-    }
+    padding: 16px;
 
     .contacts-wrapper {
-      gap: 24px;
+      gap: 16px;
 
       a {
-        font-size: 42px;
+        font-size: 36px;
       }
     }
   }
